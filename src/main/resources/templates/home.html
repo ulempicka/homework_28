@@ -7,12 +7,12 @@
 <div class="content">
     <h1 style="text-align: center" class="mt-4">NAJLEPSZE OFERTY</h1>
 
-    <div th:each="car: ${cars}">
-        <h2 th:text="${car.title}"></h2>
-        <p th:text="|Cena: ${car.price} zł|"></p>
+    <div th:each="auction: ${auctions}">
+        <h2 th:text="${auction.title}"></h2>
+        <p th:text="|Cena: ${auction.price} zł|"></p>
     </div>
 
-    <a href="/auctions">Zobacz wszystkie dostępne samochody</a>
+    <a href="/auctions">Zobacz wszystkie dostepne samochody</a>
 
 </div>
 </body>
